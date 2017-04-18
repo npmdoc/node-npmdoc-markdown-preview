@@ -1,0 +1,398 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/yuanchuan/markdown-preview"
+
+    >markdown-preview (v0.4.1)</a>
+</h1>
+<h4>Markdown preview made easy</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-preview">module markdown-preview</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">markdown-preview.</span>global</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">markdown-preview.</span>parser</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">markdown-preview.</span>server</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">markdown-preview.</span>template</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-preview.global">module markdown-preview.global</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-preview.global.get">
+            function <span class="apidocSignatureSpan">markdown-preview.global.</span>get
+            <span class="apidocSignatureSpan">(key)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-preview.global.mset">
+            function <span class="apidocSignatureSpan">markdown-preview.global.</span>mset
+            <span class="apidocSignatureSpan">(map)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-preview.global.set">
+            function <span class="apidocSignatureSpan">markdown-preview.global.</span>set
+            <span class="apidocSignatureSpan">(key, val)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">markdown-preview.global.</span>_store</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-preview.parser">module markdown-preview.parser</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-preview.parser.parse">
+            function <span class="apidocSignatureSpan">markdown-preview.parser.</span>parse
+            <span class="apidocSignatureSpan">(input)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-preview.server">module markdown-preview.server</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-preview.server.startAt">
+            function <span class="apidocSignatureSpan">markdown-preview.server.</span>startAt
+            <span class="apidocSignatureSpan">(port, fn)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-preview.template">module markdown-preview.template</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-preview.template.render">
+            function <span class="apidocSignatureSpan">markdown-preview.template.</span>render
+            <span class="apidocSignatureSpan">(map)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-preview" id="apidoc.module.markdown-preview">module markdown-preview</a></h1>
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-preview.global" id="apidoc.module.markdown-preview.global">module markdown-preview.global</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-preview.global.get" id="apidoc.element.markdown-preview.global.get">
+        function <span class="apidocSignatureSpan">markdown-preview.global.</span>get
+        <span class="apidocSignatureSpan">(key)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (key) {
+  return this._store[key];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ *
+ * @param {String} input
+ * @api public
+ */
+
+exports.parse = function(input) {
+
+var parser =  R.<span class="apidocCodeKeywordSpan">get</span>(&#x22;parser&#x22;);
+
+if ( parser === &#x22;marked&#x22; ) {
+  return marked(input);
+} else if ( parser === &#x22;remark&#x22; ) {
+  return remark.process(input).contents;
+} else {
+  return converter.makeHtml(input);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-preview.global.mset" id="apidoc.element.markdown-preview.global.mset">
+        function <span class="apidocSignatureSpan">markdown-preview.global.</span>mset
+        <span class="apidocSignatureSpan">(map)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">mset = function (map) {
+  for (key in map) {
+    if (map.hasOwnProperty(key)) {
+      this.set(key, map[key]);
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      if (map.hasOwnProperty(key)) {
+        this.set(key, map[key]);
+      }
+    }
+  }
+}
+
+R.<span class="apidocCodeKeywordSpan">mset</span>({
+  &#x27;port&#x27;: 3333,
+  &#x27;highlight&#x27;: &#x27;github&#x27;,
+  &#x27;marked&#x27;: false,
+  &#x27;stamp&#x27;: +new Date()
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-preview.global.set" id="apidoc.element.markdown-preview.global.set">
+        function <span class="apidocSignatureSpan">markdown-preview.global.</span>set
+        <span class="apidocSignatureSpan">(key, val)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">set = function (key, val) {
+  this._store[key] = val;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+},
+set: function(key, val) {
+  this._store[key] = val;
+},
+mset: function(map) {
+  for (key in map) {
+    if (map.hasOwnProperty(key)) {
+      this.<span class="apidocCodeKeywordSpan">set</span>(key, map[key]);
+    }
+  }
+}
+}
+
+R.mset({
+&#x27;port&#x27;: 3333,
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-preview.parser" id="apidoc.module.markdown-preview.parser">module markdown-preview.parser</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-preview.parser.parse" id="apidoc.element.markdown-preview.parser.parse">
+        function <span class="apidocSignatureSpan">markdown-preview.parser.</span>parse
+        <span class="apidocSignatureSpan">(input)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parse = function (input) {
+
+  var parser =  R.get(&#x22;parser&#x22;);
+
+  if ( parser === &#x22;marked&#x22; ) {
+    return marked(input);
+  } else if ( parser === &#x22;remark&#x22; ) {
+    return remark.process(input).contents;
+  } else {
+    return converter.makeHtml(input);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}, 3e3);
+
+/**
+ * Http handler for the web server
+ */
+function handler(req, res) {
+
+var parsedUrl = url.<span class="apidocCodeKeywordSpan">parse</span>(req.url)
+var callback = qs.parse(parsedUrl.query).callback
+var filename = decodeURI(parsedUrl.path.substr(1).split(&#x27;?&#x27;)[0])
+var basename = path.basename(filename.split(&#x27;?&#x27;)[0])
+var extname = path.extname(basename)
+var response = reswrap(res);
+var notfound = function() {
+  response.writeHead(404, &#x27;text&#x27;).end(&#x27;&#x27;);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-preview.server" id="apidoc.module.markdown-preview.server">module markdown-preview.server</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-preview.server.startAt" id="apidoc.element.markdown-preview.server.startAt">
+        function <span class="apidocSignatureSpan">markdown-preview.server.</span>startAt
+        <span class="apidocSignatureSpan">(port, fn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">startAt = function (port, fn) {
+  http
+    .get(&#x27;http://localhost:&#x27; + port, fn)
+    .on(&#x27;error&#x27;, function() {
+      //port free
+      server.listen(port, fn);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-preview.template" id="apidoc.module.markdown-preview.template">module markdown-preview.template</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-preview.template.render" id="apidoc.element.markdown-preview.template.render">
+        function <span class="apidocSignatureSpan">markdown-preview.template.</span>render
+        <span class="apidocSignatureSpan">(map)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">render = function (map) {
+  var template = read(join(__dirname, &#x27;../template/default.html&#x27;));
+  map &#x26;&#x26; Object.keys(map).forEach(function(key) {
+    var reg = new RegExp(&#x22;{{\\s*&#x22; + key + &#x22;\\s*}}&#x22;, &#x22;g&#x22;);
+    template = template.replace(reg, map[key]);
+  });
+  return template + clientjs;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+if (/^\.(md|mkd|markdown|html)$/.test(extname)) {
+  check(filename)
+    .pass(function() {
+      response
+        .writeHead(200, &#x27;html&#x27;)
+        .end(template.<span class="apidocCodeKeywordSpan">render</span>({
+          title: basename,
+          highlight: R.get(&#x27;highlight&#x27;) || &#x27;default&#x27;,
+          theme: getTheme(R.get(&#x27;css&#x27;)),
+          body: parser.parse(read(path.resolve(filename)))
+        }));
+    }).fail(notfound);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
