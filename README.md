@@ -1,6 +1,6 @@
 # npmdoc-markdown-preview
 
-#### api documentation for  [markdown-preview (v0.4.1)](https://github.com/yuanchuan/markdown-preview)  [![npm package](https://img.shields.io/npm/v/npmdoc-markdown-preview.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-markdown-preview) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-markdown-preview.svg)](https://travis-ci.org/npmdoc/node-npmdoc-markdown-preview)
+#### basic api documentation for  [markdown-preview (v0.4.1)](https://github.com/yuanchuan/markdown-preview)  [![npm package](https://img.shields.io/npm/v/npmdoc-markdown-preview.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-markdown-preview) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-markdown-preview.svg)](https://travis-ci.org/npmdoc/node-npmdoc-markdown-preview)
 
 #### Markdown preview made easy
 
